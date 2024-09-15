@@ -1,0 +1,353 @@
+<!-- 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+        }
+        fieldset {
+            border: none;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        legend {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"], input[type="date"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+            text-align: left;
+            box-sizing: border-box;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 100%;
+        }
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .receipt {
+            display: none;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+        }
+    </style> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.dropdown {
+    margin-bottom: 10px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.receipt {
+    display: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <form id="orderForm">
+        <fieldset>
+            <legend>Product Selection</legend>
+
+            <label for="tagline">Tagline:</label>
+            <input type="text" id="tagline" name="tagline" maxlength="50" />
+
+            <div class="dropdown">
+                <button type="button" class="dropbtn">Color</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="selectOption(this, 'color')">Pink</a>
+                    <a href="#" onclick="selectOption(this, 'color')">Peach</a>
+                    <a href="#" onclick="selectOption(this, 'color')">Purple</a>
+                </div>
+            </div>
+            <input type="hidden" id="color" name="color">
+
+            <div class="dropdown">
+                <button type="button" class="dropbtn">Size</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="selectOption(this, 'size')">S</a>
+                    <a href="#" onclick="selectOption(this, 'size')">M</a>
+                    <a href="#" onclick="selectOption(this, 'size')">L</a>
+                    <a href="#" onclick="selectOption(this, 'size')">XL</a>
+                </div>
+            </div>
+            <input type="hidden" id="size" name="size">
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" />
+
+            <label for="delivery">Delivery date:</label>
+            <input type="date" id="delivery" name="delivery" value="2024-07-29" min="2024-01-01" max="2024-12-31" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="address-line1">Address Line 1:</label>
+            <input type="text" id="address-line1" name="address-line1" />
+
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" pattern="\d{6}" title="Pincode should be exactly 6 digits" />
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" />
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" />
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+
+            <label for="phone">Phone No.:</label>
+            <input type="tel" id="phone" name="phone" pattern="\d{10}" title="Phone number should be exactly 10 digits" />
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" maxlength="200"></textarea>
+        </fieldset>
+
+
+        <button type="submit">Submit Order</button>
+    </form>
+
+    <div id="receipt" class="receipt">
+        <h2>Order Receipt</h2>
+        <p id="receiptDate"></p>
+        <p id="receiptDetails"></p>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
